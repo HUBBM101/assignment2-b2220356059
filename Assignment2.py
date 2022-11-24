@@ -71,7 +71,7 @@ def listing():
     writing()       # runs writing function
     outputs = "-"*95+"\n"       # for table
     writing()       # runs writing function
-    for patient in patient_data_list        # gets every patients pwn list from main list
+    for patient in patient_data_list:        # gets every patients pwn list from main list
         outputs = f"{patient[0]:<16} {str(100*float(patient[1]))+'%':<16} {patient[2]:<16} {patient[3]:<16} {patient[4]:<16} {str(int(100*(float(patient[5]))))+'%':<16}\n"         # output for patient's information
         writing()       # runs writing function
 
